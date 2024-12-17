@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강호도(江湖圖) - 기타</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 네비게이터 바 -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/TL.png" width="70px" height="auto" alt="로고">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-menu">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="jeongpah.html">正</a></li>
+                <li class="nav-item"><a class="nav-link" href="sapah.html">邪</a></li>
+                <li class="nav-item"><a class="nav-link" href="etc.html">外</a></li>
+                <li class="nav-item"><a class="nav-link" href="dict.html">용어 사전</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+ <!-- 기타 -->
+ <header class="text-center py-5">
+    <img src="img/logo3.png" alt="기타 배너" class="small-img ">
+    <p class="explanation"> 황실과 새외무림, 그 외의 세력들은 정파와 사파의 대립과 무관하게 자신들만의 영역에서 무림에 영향을 미칩니다.</p>
+</header>
+
+<!-- 섹션 이동 버튼 -->
+<div class="text-center py-4">
+    <button class="button logo-font3" onclick="scrollToSection('china')">황실</button>
+    <button class="button logo-font3" onclick="scrollToSection('murim')">새외무림</button>
+    <button class="button logo-font3" onclick="scrollToSection('etc')">기타 세력</button>
+
+   
+</div>
+
+<!-- 황실 섹션 -->
+<section id="china" class="section">
+    <div class="container">
+        <div class="text-center py-5">
+            <img src="img/logo/logo3-1.png" alt="Title Logo" class="title-logo">
+            <p class="text-center">관무불가침의 원칙 아래 무림과 거리를 두지만, 국가 안정을 위해 무림에 간접적으로 영향력을 행사한다.</p>
+        </div>
+        <div class="grid-container">
+
+            <!-- 금군 -->
+            <div class="card grid-card">
+                <div class="card-body">
+                    <h5 class="card-title">금군</h5>
+                    <button class="button" onclick="openModal('gumgun')">상세 보기</button>
+                </div>
+            </div>
+            
+            <!-- 동창 -->
+            <div class="card grid-card">
+                <div class="card-body">
+                    <h5 class="card-title">동창</h5>
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                        <button class="disabled-button" type="button">상세 보기</button>
+                    </span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- 새외무림 섹션 -->
+<section id="murim" class="section">
+    <div class="container">
+        <div class="text-center py-5">
+            <img src="img/logo/logo3-2.png" alt="Title Logo" class="title-logo">
+            <p class="text-center">중원 밖의 무림 세력으로, 독자적인 무공과 문화를 지니며 때로는 강호의 균형을 뒤흔들기도 한다.</p>
+        </div>
+        <div class="grid-container">
+
+            <!-- 남만 -->
+            <div class="card grid-card">
+                <div class="card-body">
+                    <h5 class="card-title">남만</h5>
+                    <button class="button" onclick="openModal('namman')">상세 보기</button>
+                </div>
+            </div>
+
+            <!-- 북해 -->
+            <div class="card grid-card">
+                <div class="card-body">
+                    <h5 class="card-title">북해빙궁</h5>
+                    <button class="button" onclick="openModal('bing')">상세 보기</button>
+                </div>
+            </div>
+
+            
+            <!-- 해동 -->
+            <div class="card grid-card">
+                <div class="card-body">
+                    <h5 class="card-title">해동</h5>
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                        <button class="disabled-button" type="button">상세 보기</button>
+                    </span>
+                </div>
+            </div>
+
+            
+            
+            <!-- 포달랍 -->
+            <div class="card grid-card">
+                <div class="card-body">
+                    <h5 class="card-title">포달랍궁</h5>
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                        <button class="disabled-button" type="button">상세 보기</button>
+                    </span>
+                </div>
+            </div>
+                
+            
+            <!-- 장백 -->
+            <div class="card grid-card">
+                <div class="card-body">
+                    <h5 class="card-title">장백파</h5>
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                        <button class="disabled-button" type="button">상세 보기</button>
+                    </span>
+                </div>
+            </div>
+          
+
+        </div>
+    </div>
+</section>
+
+
+<!-- 기타 섹션 -->
+<section id="etc" class="section">
+    <div class="container">
+        <div class="text-center py-5">
+            <img src="img/logo/logo3-3.png" alt="Title Logo" class="title-logo">
+            <p class="text-center">실리를 추구하거나 독립적으로 활동하는 세력들로, 무림의 다양한 흐름 속에서 독자적인 역할을 한다.</p>
+        </div>
+        <div class="grid-container">
+
+            <!-- 표국 -->
+            <div class="card grid-card">
+                <div class="card-body">
+                    <h5 class="card-title">표국</h5>
+                    <button class="button" onclick="openModal('pyoguk')">상세 보기</button>
+                </div>
+            </div>
+            
+          
+        </div>
+    </div>
+</section>
+
+
+ <!-- 고정 버튼 -->
+ <button class="fixed-button" onclick="scrollToTop()">
+    <img class="button-img" src="img/TopBtn.png" alt="Button Image">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+    <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+
+    <!-- 세력 설명 Modal -->
+    <div class="modal fade" id="sectModal" tabindex="-1" aria-labelledby="sectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sectModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 문파 이름 및 별칭 -->
+                    <h3 id="sectName">문파 이름</h3>
+                    <!-- 문파 이름 및 별칭 -->
+                    <h3 id="sectHanja">문파 이름</h3>
+                    <!-- 핵심 무공 설명 -->
+                    <h4>핵심 무공</h4>
+                    <p id="sectMartialArts"></p>
+                    <!-- 특징 -->
+                    <h4>특징</h4>
+                    <p id="sectQuality"></p>
+                    <!-- 무협지 추천 -->
+                    <h4>추천 무협지</h4>
+                    <ul id="sectBooks"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- 푸터 -->
+     <footer class="footerCss text-center">
+        <div class="container">
+            <p>© 2024 강호도</p>
+            <div class="external-links">
+                <a href="https://www.aladin.co.kr" class="btn btn-outline-light m-1" target="_blank">시리즈</a>
+                <a href="https://www.munpia.com/" class="btn btn-outline-light m-1" target="_blank">문피아</a>
+                <a href="https://page.kakao.com/" class="btn btn-outline-light m-1" target="_blank">카카오페이지</a>
+                <a href="https://ridibooks.com/fantasy/webnovel" class="btn btn-outline-light m-1" target="_blank">리디북스</a>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src = "example.js"></script> 
+</body>
+</html>

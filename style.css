@@ -1,0 +1,589 @@
+body {
+  background-color: #000;
+  color:#fff;
+  background-clip: padding-box; 
+    font-family: 'Arial', sans-serif;
+  
+}
+html{
+  background-color: #000;
+}
+div, header{
+  background-color: transparent; /* 배경을 투명하게 설정 */
+}
+
+h3{
+  font-family: 'REEJI-CHAO-XiaoShiGB', sans-serif;
+  font-size: 40pt;
+  text-align: center;
+}
+.container-fluid {
+  background-color: black; 
+}
+
+.container {
+  padding: 20px; 
+}
+
+.small-img {
+    width: 500px; /* 이미지 너비 */
+    height: auto; /* 비율 유지 */
+  }
+
+  .title-logo-container {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 (필요 시) */
+    height: 100vh; /* 선택 사항: 화면 전체 중앙 정렬 */
+}
+
+  .title-logo {
+    width: 400px; /* 이미지 너비 */
+    height: auto; /* 비율 유지 */
+  }
+
+.section {
+  padding: 50px 0;
+}
+.grid-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.grid-card {
+  width: 200px;
+}
+.scroll-button {
+  margin: 10px;
+}
+
+/* 설명 */
+.explanation{
+  font-size: larger;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-right: 300px;
+  margin-left: 300px;
+}
+
+
+
+@font-face {
+  font-family: 'Shilla_Culture(B)';
+  src: url('font/Shilla_Culture\(B\).ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SSRockRegular';
+  src: url('font/SSRockRegular.ttf') format('truetype');
+}
+
+
+/* 특정 요소에 로고 폰트 적용 */
+.logo-font2 {
+  font-family: 'Shilla_Culture(B)', sans-serif;
+}
+
+.logo-font3 {
+  font-family: 'SSRockRegular', sans-serif;
+}
+
+
+.main-banner {
+  /* 배너 크기 */
+  height: 100vh; /* 화면 높이의 100% */
+  width: 100vw; /* 화면 너비의 100% */
+
+  /* 배경 이미지 */
+  background-image: url('img/ink\ background.jpg');
+  background-size: cover; /* 비율에 맞춰 화면을 채우기 */
+  background-position: center; /* 중앙에 초점 맞추기 */
+  background-repeat: no-repeat; /* 반복 금지 */
+  background-attachment: fixed; /* 고정된 배경 */
+
+  /* 텍스트 스타일링 */
+  position: relative;
+}
+
+.main-banner h1 {
+  font-size: 10vw; /* 화면 너비의 5% */
+  font-family: 'REEJI-CHAO-XiaoShiGB', sans-serif;
+}
+
+.banner-content {
+  position: absolute; /* 부모 요소 내에서 절대 위치 지정 */
+  top: 0; /* 상단 0px */
+  left: 0; /* 왼쪽 0px */
+  right: 0; /* 오른쪽 0px */
+  bottom: 0; /* 하단 0px */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* 반투명 검정 배경 */
+  padding: 20px;
+  display: flex; /* 콘텐츠를 중앙에 배치하기 위해 사용 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  height: 100%; /* 배너의 전체 높이 */
+  width: 100%; /* 배너의 전체 너비 */
+}
+
+.leftIcon{
+  margin-left: 400px;
+  height: 200px;
+  width: auto;
+}
+
+.intro{
+  font-size: larger;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-right: 400px;
+  margin-left: 300px;
+}
+
+.map {
+  width: 1000px;
+  height: auto;
+}
+
+/* 네비 스타일 */
+.navbar {
+  background-color: #000; 
+  padding-top: 20px;
+  padding-bottom: 0px;
+  position: fixed; /* 네비게이션 바 고정 */
+  top: 0; /* 화면 상단에 고정 */
+  left: 0; /* 화면 왼쪽에 고정 */
+  width: 100%; /* 전체 너비 사용 */
+  z-index: 1000; /* 다른 요소보다 위에 오도록 설정 */
+}
+
+.navbar-brand {
+  font-family: 'Noto Sans', sans-serif; 
+}
+
+.navbar-nav {
+  display: flex;  /* 메뉴 항목을 가로로 정렬 */
+  flex-direction: row;  /* 반응형으로 줄어들지 않게 설정 */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px; 
+  
+}
+
+.navbar-text {
+  color: #a8a8a8;
+
+  margin-left: auto;
+  font-weight: 600;
+
+}
+
+.navbar-nav .nav-link {
+  color: #fff  !important;
+  text-decoration: none !important;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #a92035  !important; 
+  border-bottom: 3px solid #a92035;
+}
+
+
+/* 화면이 작은 크기일때 네비게이터 기본 설정*/
+@media (max-width: 992px) {
+  .navbar-nav {
+    display: block; /* 모바일에서 메뉴를 세로로 정렬 */
+  }
+}
+/* 네비게이션 바 아래 컨텐츠가 네비게이션 바 뒤에 가려지지 않도록 여백 추가 */
+body {
+  padding-top: 60px; /* 네비바 높이만큼 여백을 주어 컨텐츠가 가려지지 않도록 */
+}
+
+
+.footerCss{
+  background-color: #000; 
+  margin-top: 500px;
+}
+
+
+
+/* 드래그된 텍스트 스타일 */
+::selection {
+  background-color: #6d0d1b; /* 선택된 텍스트의 배경 색상 */
+  color: white; /* 선택된 텍스트의 글자 색상 */
+}
+
+/* 고정 버튼 스타일 */
+.fixed-button {
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 0px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+/* 버튼 스타일 */
+.button {
+  display: inline-block; /* 버튼 크기 고정 */
+  padding: 10px 20px; /* 내부 여백 */
+  margin: 10px;
+  font-size: 15px; /* 글자 크기 */
+  font-weight: bold; /* 글자 두께 */
+  color: #a92035; /* 글자 색상 */
+  background-color: transparent; /* 투명한 배경 */
+  border: 2px solid #a92035; /* 테두리 색상 */
+  border-radius: 25px; /* 라운드 모서리 */
+  cursor: pointer; /* 마우스 포인터 */
+  transition: all 0.3s ease; /* 부드러운 변화 효과 */
+}
+
+/* 마우스를 올렸을 때 */
+.button:hover {
+  background-color: #6d0d1b; /* 배경색 추가 */
+  border: 2px solid #6d0d1b;
+  color: #ffffff; /* 글자색 변경 */
+  transform: scale(1.1); /* 약간 확대 효과 */
+}
+
+/* 클릭(활성화) 상태 */
+.button:active {
+  background-color: #a92035; /* 어두운 배경색 */
+  color: #ffffff; /* 글자색 유지 */
+  transform: scale(0.95); /* 약간 축소 효과 */
+}
+
+
+/* 비활성화 버튼 */
+.disabled-button {
+  display: inline-block; /* 버튼 크기 고정 */
+  padding: 10px 20px; /* 내부 여백 */
+  margin: 10px;
+  font-size: 15px; /* 글자 크기 */
+  font-weight: bold; /* 글자 두께 */
+  color: #766669; /* 글자 색상 */
+  background-color: #ded7d7; /* 투명한 배경 */
+  border: 2px solid hsl(349, 7%, 43%); /* 테두리 색상 */
+  border-radius: 25px; /* 라운드 모서리 */
+  cursor: not-allowed; /* 비활성화된 느낌의 커서 */
+  pointer-events: none; /* 클릭 비활성화 */
+}
+
+
+/* 버튼 컨테이너 스타일 */
+.text-center {
+  margin-top: 20px;
+}
+
+/* 기본 하이퍼링크 스타일 */
+a {
+  color: #ffffff; /* 기본 텍스트 색상 */
+  text-decoration: none; /* 기본 밑줄 제거 */
+  font-weight: 500; /* 글씨 두께 */
+}
+
+/* 마우스 오버시 하이퍼링크 색상 변화 */
+a:hover {
+  color: #a92035; /* 호버시 텍스트 색상 */
+  text-decoration: underline; /* 호버시 밑줄 추가 */
+}
+
+/* 포커스시 하이퍼링크 스타일 */
+a:focus {
+  outline: none; /* 포커스 시 외곽선 제거 */
+  border-bottom: 2px solid #a92035; /* 밑줄을 추가하여 포커스 강조 */
+}
+
+/* 하이퍼링크를 클릭했을 때 스타일 */
+a:active {
+  color:  #6d0d1b; /* 클릭했을 때 색상 */
+  text-decoration: none; /* 클릭 후 밑줄 제거 */
+}
+
+
+/* 아코디언 */
+.accordion-section {
+  margin: auto auto 90px auto ; /* 외부 여백 */
+  max-width: 1000px; /* 최대 너비 */
+}
+
+
+.accordion-header {
+  font-family: 'Shilla_Culture(B)', sans-serif;
+}
+
+.accordion-button {
+  background-color: #fff; /* 기본 배경색 */
+  color: #333; /* 기본 텍스트 색상 */
+  border: none; /* 테두리 제거 */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #6d0d1b; /* 클릭 시 배경색 */
+  color: #fff; /* 클릭 시 텍스트 색상 */
+}
+
+.accordion-button:focus {
+  box-shadow: none; /* 포커스 시 그림자 제거 */
+}
+
+.indexAbody {
+  color: black;
+}
+
+
+
+/* 모달 백그라운드 색상 */
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.7); /* 배경 어둡게 */
+}
+
+/* 모달 창 스타일 */
+.modal-content {
+  background-color: #502c2c; /* 어두운 배경 */
+  color: #ecf0f1; /* 글자 색상 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  border: 2px solid #5e3434; /* 테두리 추가 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* 그림자 효과 */
+}
+
+#sectName {
+  display: none;
+}
+
+/* 모달 제목 */
+.modal-header {
+  background-color: #5e3434; /* 제목 배경 */
+  font-family: 'Shilla_Culture(B)', sans-serif;
+  color: #ecf0f1; /* 제목 텍스트 색 */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex; /* 제목과 버튼을 나란히 정렬 */
+  align-items: center; /* 세로 정렬 */
+  justify-content: space-between; /* 제목과 닫기 버튼 간격 유지 */
+}
+
+/* 제목 텍스트 크기 조정 */
+.modal-header .modal-title {
+  font-size: 30px; /* 제목 글자 크기 */
+}
+
+/* 닫기 버튼 기본 스타일 유지 */
+.modal-header .btn-close {
+  font-size: inherit; /* 버튼 크기를 기본값으로 유지 */
+}
+
+
+
+
+/* 모달 바디 */
+.modal-body {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+
+   /* 배경 이미지 추가 */
+   background-image: url('img/bg4.png'); /* 배경 이미지 URL */
+   background-repeat: no-repeat; /* 이미지 반복 안 함 */
+   background-position: right bottom; /* 이미지 위치 우측 하단 */
+   background-size: 500px auto; ; /* 이미지 크기 설정 */
+   background-attachment: fixed; /* 배경 고정 */
+}
+
+/* 모달 푸터 */
+.modal-footer {
+  background-color: #5e3434;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* 모달 애니메이션 효과 */
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+  transform: translate(0, 0); /* 모달이 화면에 나타날 때 */
+}
+
+
+/* 카드 그리드 컨테이너 */
+.card-grid {
+  display: grid; /* 그리드 레이아웃 사용 */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 열을 자동으로 채우고 최소 250px 크기로 조정 */
+  gap: 100px; /* 카드 간의 간격 */
+  padding: 20px;
+}
+
+/* 카드 스타일 */
+.card {
+  background-color: #fff; /* 카드 배경 색 */
+  border-radius: 8px; /* 둥근 모서리 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  overflow: hidden; /* 내용이 카드 영역을 벗어나지 않게 설정 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 애니메이션 효과 */
+
+}
+
+/* 카드 내용 */
+.card-body {
+  padding: 15px;
+  display: flex;  /* 플렉스 박스 활성화 */
+  flex-direction: column;  /* 세로 방향으로 정렬 */
+  justify-content: center;  /* 세로 방향 가운데 정렬 */
+  align-items: center;  /* 가로 방향 가운데 정렬 */
+  height: 100%;  /* 부모 요소의 전체 높이를 사용 */
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+}
+
+/* 카드 제목 */
+.card-title {
+  font-family: 'Shilla_Culture(B)', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 15px; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 카드 설명 */
+.card-text {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* 카드 버튼 */
+.card-footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+  margin-bottom: -50px;
+  text-align: center;
+}
+
+/* 카드 호버 효과 */
+.card:hover {
+  transform: translateY(-5px); /* 카드 위로 떠오르는 효과 */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* 그림자 확대 */
+}
+
+
+
+/* 검색바 포커스 시 기본 스타일 제거 */
+#searchInput:focus {
+  outline: none; /* 포커스 테두리 제거 */
+  box-shadow: none; /* 포커스 시 그림자 제거 */
+  border-color: transparent; /* 포커스 시 테두리 색 제거 */
+}
+
+/* Sticky 검색바 상단 고정 */
+.sticky-top {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.search-container {
+  background-color: #000;
+  text-align: center; /* 중앙 정렬 */
+  margin: 60px; /* 외부 여백 */
+}
+
+#searchInput {
+  width: 80%; /* 검색 입력 필드 너비 */
+  padding: 10px; /* 내부 여백 */
+  font-size: 16px; /* 텍스트 크기 */
+}
+
+.input-group-text {
+  background-color: transparent; /* 배경색 투명 */
+  border: none; /* 테두리 제거 */
+}
+
+.input-group-text i {
+  font-size: 20px; /* 아이콘 크기 */
+  color: #a92035; /* 아이콘 색상 붉은색 */
+  
+}
+
+/* 검색 결과 컨테이너 */
+.terms-container {
+  max-height: 720px;
+  overflow-y: auto;
+  margin: 20px auto;
+  width: 80%;
+  background-color: rgb(162, 162, 162);
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #333; /* 헤더 배경색 */
+  color: #fff; /* 헤더 글자색 */
+}
+
+.table tbody tr {
+  background-color: rgba(0, 0, 0, 0.05); /* 모든 행의 동일한 배경색 */
+}
+
+
+
+/* 페이지네이션 스타일 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.pagination button {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #6d0d1b;
+}
+
+.pagination button.active {
+  background-color: rgb(169, 32, 53);
+  font-weight: bold;
+}
+
+
+
+  /* 이미지 스타일 */
+  .button-img {
+    width: 60px;
+    height: 60px;
+  }

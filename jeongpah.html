@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강호도(江湖圖) - 정파</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+   
+</head>
+<body>
+  <!-- 네비게이터 바 -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/TL.png" width="70px" height="auto" alt="로고">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-menu">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="jeongpah.html">正</a></li>
+                <li class="nav-item"><a class="nav-link" href="sapah.html">邪</a></li>
+                <li class="nav-item"><a class="nav-link" href="etc.html">外</a></li>
+                <li class="nav-item"><a class="nav-link" href="dict.html">용어 사전</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- 배너 -->
+    <header class="text-center py-5">
+        <img src="img/logo1.png" alt="정파 배너" class="small-img">
+        <p class="explanation"> 정파는 무림에서 정의와 도덕을 수호하며 질서를 유지하려는 세력으로, 협(侠)과 의(義)를 중시하는 무인들로 이루어져 있습니다. 
+            이들은 주로 약자를 보호하고 불의를 응징하며, 소설 내부의 설정에 따라 무림맹 같은 조직을 중심으로 활동합니다.
+             무림맹은 정파의 중심 세력으로, 무림의 규율을 정하고 각 문파 간의 조화를 도모합니다. 정파는 개인의 이익보다는 
+             공동체의 안정을 중시하며, 사파나 마교와 대립하며 무림의 균형을 유지합니다. 이러한 정파의 역할은 무협 세계에서 정의의 상징으로 자리 잡고 있습니다.</p>
+       
+    </header>
+
+    <!-- 섹션 이동 버튼 -->
+    <div class="text-center py-4">
+        <button class="button logo-font3" onclick="scrollToSection('nine-one')">구파일방</button>
+        <button class="button logo-font3" onclick="scrollToSection('murim-sega')">세가</button>
+        <button class="button logo-font3" onclick="scrollToSection('other-sects')">기타 문파</button>
+    </div>
+
+    <!-- 구파일방 섹션 -->
+    <section id="nine-one" class="section">
+        <div class="container">
+            <div class="text-center py-5">
+                <img src="img/logo/logo1-1.png" alt="Title Logo" class="title-logo">
+                <p class="text-center">무림 정파의 중심을 이루는 10개의 문파로, 소설마다 이뤄지는 구성이 다르다. 정의와 무공을 수호하며 강호의 질서를 유지하는 핵심 세력이다.</p>
+            </div>
+            <div class="grid-container">
+
+                <!-- 개방 -->
+                <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">개방</h5>
+                        <button class="button" onclick="openModal('gaebang')">상세 보기</button>
+                    </div>
+                </div>
+                
+                <!-- 소림 -->
+                <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">소림사</h5>
+                        <button class="button" onclick="openModal('sorim')">상세 보기</button>
+                    </div>
+                </div>
+
+                 <!-- 무당 -->
+                 <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">무당파</h5>
+                        <button class="button" onclick="openModal('mudang')">상세 보기</button>
+                    </div>
+                </div>
+
+                 <!-- 화산 -->
+                 <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">화산파</h5>
+                        <button class="button" onclick="openModal('hwasan')">상세 보기</button>
+                    </div>
+                </div>
+
+                  <!-- 곤륜 -->
+                  <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">곤륜파</h5>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                            <button class="disabled-button" type="button">상세 보기</button>
+                        </span>
+                    </div>
+                </div>
+
+                  <!-- 종남 -->
+                  <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">종남파</h5>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                            <button class="disabled-button" type="button">상세 보기</button>
+                        </span>
+                    </div>
+                </div>
+
+                  <!-- 점창 -->
+                  <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">점창파</h5>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                            <button class="disabled-button" type="button">상세 보기</button>
+                        </span>
+                    </div>
+                </div>
+
+              <!-- 아미 -->
+               <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">아미파</h5>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                            <button class="disabled-button" type="button">상세 보기</button>
+                        </span>
+                        </div>
+                    </div>
+
+                <!-- 청성 -->
+                 <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">청성파</h5>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                            <button class="disabled-button" type="button">상세 보기</button>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 해남 -->
+                 <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">해남파</h5>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                            <button class="disabled-button" type="button">상세 보기</button>
+                        </span>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 무림세가 섹션 -->
+    <section id="murim-sega" class="section">
+        <div class="container">
+            <div class="text-center py-5">
+                <img src="img/logo/logo1-2.png" alt="Title Logo" class="title-logo">
+                <p class="text-center">명문 가문들로 구성된 세력으로, 전통과 가문의 명예를 지키며 강력한 영향력과 무공을 자랑한다.</p>
+            </div>
+            <div class="grid-container">
+
+                <!-- 남궁-->
+                <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">남궁세가</h5>
+                        <button class="button" onclick="openModal('namgung')">상세 보기</button>
+                    </div>
+                </div>
+
+                <!-- 사천  -->
+                <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">사천당가</h5>
+                        <button class="button" onclick="openModal('dangga')">상세 보기</button>
+                    </div>
+                </div>
+
+                <!-- 제갈 -->
+                <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">제갈세가</h5>
+                        <button class="button" onclick="openModal('jaegal')">상세 보기</button>
+                    </div>
+                </div>
+                
+                <!-- 하북 -->
+                <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">하북팽가</h5>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                            <button class="disabled-button" type="button">상세 보기</button>
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- 모용 -->
+                <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">모용세가</h5>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                            <button class="disabled-button" type="button">상세 보기</button>
+                        </span>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 기타 문파 섹션 -->
+    <section id="other-sects" class="section">
+        <div class="container">
+            <div class="text-center py-5">
+                <img src="img/logo/logo1-3.png" alt="Title Logo" class="title-logo">
+                <p class="text-center">구파일방과 오대세가 외에도 다양한 정파가 존재하며, 각각 독자적인 무공과 철학으로 강호에 기여한다.</p>
+            </div>
+            <div class="grid-container">
+
+               
+                <!-- 황보 -->
+                <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">황보세가</h5>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                            <button class="disabled-button" type="button">상세 보기</button>
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- 산동 -->
+                <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">산동악가</h5>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                            <button class="disabled-button" type="button">상세 보기</button>
+                        </span>
+                    </div>
+                </div>
+                <!-- 진주 -->
+                <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">진주언가</h5>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                            <button class="disabled-button" type="button">상세 보기</button>
+                        </span>
+                     </div>
+                 </div>
+
+                 <!-- 모산-->
+                 <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">모산파</h5>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                            <button class="disabled-button" type="button">상세 보기</button>
+                        </span>
+                    
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+     <!-- 고정 버튼 -->
+<button class="fixed-button" onclick="scrollToTop()">
+    <img class="button-img" src="img/TopBtn.png" alt="Button Image">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+
+    <!-- 세력 설명 Modal -->
+    <div class="modal fade" id="sectModal" tabindex="-1" aria-labelledby="sectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sectModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 문파 이름 및 별칭 -->
+                    <h3 id="sectName">문파 이름</h3>
+                    <!-- 문파 이름 및 별칭 -->
+                    <h3 id="sectHanja" >문파 한자</h3>
+                    <!-- 핵심 무공 설명 -->
+                    <h4>핵심 무공</h4>
+                    <p id="sectMartialArts"></p>
+                    <!-- 특징 -->
+                    <h4>특징</h4>
+                    <p id="sectQuality"></p>
+                    <!-- 무협지 추천 -->
+                    <h4>추천 무협지</h4>
+                    <ul id="sectBooks"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- 푸터 -->
+     <footer class="footerCss text-center">
+        <div class="container">
+            <p>© 2024 강호도</p>
+            <div class="external-links">
+                <a href="https://www.aladin.co.kr" class="btn btn-outline-light m-1" target="_blank">시리즈</a>
+                <a href="https://www.munpia.com/" class="btn btn-outline-light m-1" target="_blank">문피아</a>
+                <a href="https://page.kakao.com/" class="btn btn-outline-light m-1" target="_blank">카카오페이지</a>
+                <a href="https://ridibooks.com/fantasy/webnovel" class="btn btn-outline-light m-1" target="_blank">리디북스</a>
+            </div>
+        </div>
+    </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+ <script src = "example.js"></script> 
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강호도(江湖圖) - 사파</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<!-- 네비게이터 바 -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/TL.png" width="70px" height="auto" alt="로고">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-menu">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="jeongpah.html">正</a></li>
+                <li class="nav-item"><a class="nav-link" href="sapah.html">邪</a></li>
+                <li class="nav-item"><a class="nav-link" href="etc.html">外</a></li>
+                <li class="nav-item"><a class="nav-link" href="dict.html">용어 사전</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- 배너 -->
+    <header class="text-center py-5">
+        <img src="img/logo2.png" alt="사파 배너" class="small-img">
+        <p class="explanation">사파는 무림에서 개인의 이익과 야망을 추구하며, 전통적인 도덕과 질서를 거부하는 세력을 말합니다. 
+            사파는 강한 자만이 살아남는 논리를 따르며, 주로 무자비한 방식으로 권력을 추구하거나 자신의 욕망을 채웁니다. 
+            특정한 조직이나 문파보다는 흩어진 개별 세력이 많지만, 때로는 강력한 리더 아래 연합하여 큰 위협이 되기도 합니다. 
+            사파는 정파와 대립하며 무림의 혼란을 초래하지만, 그들만의 독특한 철학과 무공으로 무협 세계에서 중요한 존재감을 발휘합니다.
+        </p>
+        
+    </header>
+
+    <!-- 섹션 이동 버튼 -->
+    <div class="text-center py-4">
+        <button class="button logo-font3" onclick="scrollToSection('black')">흑도</button>
+        <button class="button logo-font3" onclick="scrollToSection('gyo')">사교</button>
+       
+    </div>
+
+    <!-- 흑도 섹션 -->
+    <section id="black" class="section">
+        <div class="container">
+            <div class="text-center py-5">
+                <img src="img/logo/logo2-1.png" alt="Title Logo" class="title-logo">
+                <p class="text-center">강자의 논리와 개인의 욕망을 따르는 세력으로, 무림 질서를 위협하며 정파와 끊임없이 대립한다.</p>
+            </div>
+            <div class="grid-container">
+
+                <!-- 녹림 -->
+                <div class="card grid-card">
+                   
+                    <div class="card-body">
+                        <h5 class="card-title">녹림</h5>
+                        <button class="button" onclick="openModal('nokrim')">상세 보기</button>
+                    </div>
+                </div>
+                
+                <!-- 장강 -->
+                <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">장강수로채</h5>
+                        <button class="button" onclick="openModal('jangkang')">상세 보기</button>
+                    </div>
+                </div>
+
+                 <!-- 하오문 -->
+                 <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">하오문</h5>
+                        <button class="button" onclick="openModal('haomun')">상세 보기</button>
+                    </div>
+                </div>
+
+                
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 사교 섹션 -->
+    <section id="gyo" class="section">
+        <div class="container">
+            <div class="text-center py-5">
+                <img src="img/logo/logo2-2.png" alt="Title Logo" class="title-logo">
+                <p class="text-center">극악무도한 사상과 강력한 무공을 바탕으로 무림 제패를 꿈꾼다.</p>
+            </div>
+            <div class="grid-container">
+
+                <!-- 마교 -->
+                <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">마교</h5>
+                        <button class="button" onclick="openModal('magyo')">상세 보기</button>
+                    </div>
+                </div>
+                <!-- 혈교 -->
+                <div class="card grid-card">
+                    <div class="card-body">
+                        <h5 class="card-title">혈교</h5>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="준비중입니다.">
+                            <button class="disabled-button" type="button">상세 보기</button>
+                        </span>
+                    </div>
+                </div>
+
+                
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    
+     <!-- 고정 버튼 -->
+<button class="fixed-button" onclick="scrollToTop()">
+    <img class="button-img" src="img/TopBtn.png" alt="Button Image">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+    <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+
+
+    <!-- 세력 설명 Modal -->
+    <div class="modal fade" id="sectModal" tabindex="-1" aria-labelledby="sectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sectModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 문파 이름 및 별칭 -->
+                    <h3 id="sectName">문파 이름</h3>
+                    <!-- 문파 이름 및 별칭 -->
+                    <h3 id="sectHanja">문파 이름</h3>
+                    <!-- 핵심 무공 설명 -->
+                    <h4>핵심 무공</h4>
+                    <p id="sectMartialArts"></p>
+                    <!-- 특징 -->
+                    <h4>특징</h4>
+                    <p id="sectQuality"></p>
+                    <!-- 무협지 추천 -->
+                    <h4>추천 무협지</h4>
+                    <ul id="sectBooks"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- 푸터 -->
+ <footer class="footerCss text-center">
+    <div class="container">
+        <p>© 2024 강호도</p>
+        <div class="external-links">
+            <a href="https://www.aladin.co.kr" class="btn btn-outline-light m-1" target="_blank">시리즈</a>
+            <a href="https://www.munpia.com/" class="btn btn-outline-light m-1" target="_blank">문피아</a>
+            <a href="https://page.kakao.com/" class="btn btn-outline-light m-1" target="_blank">카카오페이지</a>
+            <a href="https://ridibooks.com/fantasy/webnovel" class="btn btn-outline-light m-1" target="_blank">리디북스</a>
+        </div>
+    </div>
+</footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+ <script src = "example.js"></script> 
+
+</body>
+</html>
